@@ -69,10 +69,11 @@ function greetMe(){
 
 speakBtn.addEventListener('click', () => {
    recognition.start();
+   greetMe();
 }) 
 
-window.addEventListener('load', ()=> {
-//    speech.text("Activating Sepab");
-   greetMe();
+// window.addEventListener('load', ()=> {
+// //    speech.text("Activating Sepab");
+//    greetMe();
 })
 // window.addEventListener('load', greetMe);
