@@ -42,11 +42,11 @@ function determineWords(speech, words) {
    if(words.includes("what is your name")) {
       speech.text = "My name is ABK";
    }
-   if(words.includes("How are you doing")) {
+   if(words.includes("how are you doing")) {
       speech.text = "I am fine , thank you";
    }
-   if(words.includes("Who are you")) {
-      computerSpeech = "I am habeebee , ABK new girlfriend!";
+   if(words.includes("who are you")) {
+      speech.text = "I am habeebee , ABK new girlfriend!";
    }
 }
 
