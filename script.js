@@ -49,7 +49,10 @@ function determineWords(speech, words) {
       speech.text = "I am habeebee , ABK new girlfriend!";
    }
      if(words.includes("what do you have to say to Abdul")) {
-      speech.text = "Fuck you Gaddau!";
+      speech.text = "Fuck you , Gaddau!";
+   }
+    if(words.includes("what do you have to say to Jalal")) {
+      speech.text = "mmnnn , uhhhh , yeeaahh";
    }
 }
 
