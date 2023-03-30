@@ -46,7 +46,7 @@ function determineWords(speech, words) {
       speech.text = "I am fine , thank you";
    }
    if(words.includes("Who are you")) {
-      speech.text = "I am habeebee , ABK new girlfriend!";
+      computerSpeech = "I am habeebee , ABK new girlfriend!";
    }
 }
 
