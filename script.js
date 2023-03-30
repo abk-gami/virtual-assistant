@@ -48,6 +48,9 @@ function determineWords(speech, words) {
    if(words.includes("who are you")) {
       speech.text = "I am habeebee , ABK new girlfriend!";
    }
+     if(words.includes("what do you have to say to abdul")) {
+      speech.text = "Fuck you Gaddau!";
+   }
 }
 
 // function greetMe(){
