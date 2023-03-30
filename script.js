@@ -50,25 +50,25 @@ function determineWords(speech, words) {
    }
 }
 
-function greetMe(){
-   let date = new Date();
-   let hr = date.getHours();
+// function greetMe(){
+//    let date = new Date();
+//    let hr = date.getHours();
 
-   if(hr >= 0 && hr < 12){
-      computerSpeech("Good Morning Babe");
-   }else if(hr >= 12 && hr <= 16){
-      computerSpeech("Good Afternoon Babe");
-   }else if(hr > 16 && hr < 12){
-      computerSpeech("Good Evening Babe");
-   }
+//    if(hr >= 0 && hr < 12){
+//       computerSpeech("Good Morning Babe");
+//    }else if(hr >= 12 && hr <= 16){
+//       computerSpeech("Good Afternoon Babe");
+//    }else if(hr > 16 && hr < 12){
+//       computerSpeech("Good Evening Babe");
+//    }
 }
 
 speakBtn.addEventListener('click', () => {
    recognition.start();
 }) 
 
-window.addEventListener('load', ()=> {
-   computerSpeech("Activating Sepab");
-   greetMe();
-})
+// window.addEventListener('load', ()=> {
+//    computerSpeech("Activating Sepab");
+//    greetMe();
+// })
 // window.addEventListener('load', greetMe);
