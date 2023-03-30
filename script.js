@@ -61,7 +61,7 @@ function determineWords(speech, words) {
 //    }else if(hr > 16 && hr < 12){
 //       computerSpeech("Good Evening Babe");
 //    }
-}
+// }
 
 speakBtn.addEventListener('click', () => {
    recognition.start();
