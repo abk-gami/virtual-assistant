@@ -54,22 +54,22 @@ function determineWords(speech, words) {
 
 }
 
-function greetMe(){
-   let date = new Date();
-   let hr = date.getHours();
+// function greetMe(){
+//    let date = new Date();
+//    let hr = date.getHours();
 
-   if(hr >= 0 && hr < 12){
-      speech.text("Good Morning Babe");
-   }else if(hr >= 12 && hr <= 16){
-      speech.text("Good Afternoon Babe");
-   }else if(hr > 16 && hr < 12){
-      speech.text("Good Evening Babe");
-   }
-}
+//    if(hr >= 0 && hr < 12){
+//       speech.text("Good Morning Babe");
+//    }else if(hr >= 12 && hr <= 16){
+//       speech.text("Good Afternoon Babe");
+//    }else if(hr > 16 && hr < 12){
+//       speech.text("Good Evening Babe");
+//    }
+// }
 
 speakBtn.addEventListener('click', () => {
    recognition.start();
-   greetMe();
+//    greetMe();
 }) 
 
 // window.addEventListener('load', ()=> {
