@@ -72,7 +72,7 @@ speakBtn.addEventListener('click', () => {
 }) 
 
 window.addEventListener('load', ()=> {
-   speech.text("Activating Sepab");
+//    speech.text("Activating Sepab");
    greetMe();
 })
 // window.addEventListener('load', greetMe);
