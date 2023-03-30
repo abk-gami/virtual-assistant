@@ -35,11 +35,11 @@ function computerSpeech(words) {
 }
 
 function determineWords(speech, words) {
-   if(words.includes("Hello")) {
+   if(words.includes("hello")) {
       speech.text = "Heyyyyyyy";
    }
 
-   if(words.includes("What is your name")) {
+   if(words.includes("what is your name")) {
       speech.text = "My name is ABK";
    }
    if(words.includes("How are you doing")) {
