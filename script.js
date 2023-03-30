@@ -48,33 +48,31 @@ function determineWords(speech, words) {
    if(words.includes("who are you")) {
       speech.text = "I am habeebee , ABK new girlfriend!";
    }
-//      if(words.includes("what do you have to say to Abdul")) {
-//       speech.text = "Fuck you , Gaddau!";
-//    }
-    if(words.includes("what do you have to say to Abdul")) {
-      speech.text = "mmnnn , uhhhh , yeeaahh";
+     if(words.includes("what do you have to say to Abdul")) {
+      speech.text = "Fuck you , Gaddau!";
    }
+
 }
 
-// function greetMe(){
-//    let date = new Date();
-//    let hr = date.getHours();
+function greetMe(){
+   let date = new Date();
+   let hr = date.getHours();
 
-//    if(hr >= 0 && hr < 12){
-//       computerSpeech("Good Morning Babe");
-//    }else if(hr >= 12 && hr <= 16){
-//       computerSpeech("Good Afternoon Babe");
-//    }else if(hr > 16 && hr < 12){
-//       computerSpeech("Good Evening Babe");
-//    }
-// }
+   if(hr >= 0 && hr < 12){
+      speech.text("Good Morning Babe");
+   }else if(hr >= 12 && hr <= 16){
+      speech.text("Good Afternoon Babe");
+   }else if(hr > 16 && hr < 12){
+      speech.text("Good Evening Babe");
+   }
+}
 
 speakBtn.addEventListener('click', () => {
    recognition.start();
 }) 
 
-// window.addEventListener('load', ()=> {
-//    computerSpeech("Activating Sepab");
-//    greetMe();
-// })
+window.addEventListener('load', ()=> {
+   speech.text("Activating Sepab");
+   greetMe();
+})
 // window.addEventListener('load', greetMe);
