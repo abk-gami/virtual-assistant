@@ -51,7 +51,7 @@ function determineWords(speech, words) {
      if(words.includes("what do you have to say to Abdul")) {
       speech.text = "Fuck you , Gaddau!";
    }
-    if(words.includes("what do you have to say to Jalal")) {
+    if(words.includes("what do you have to say to Jalan")) {
       speech.text = "mmnnn , uhhhh , yeeaahh";
    }
 }
