@@ -27,6 +27,10 @@ button{
     border-radius: 30px;
     border: none;
     box-shadow: 1px 1px 36px #9c9c9c;
+    transition: all .4s ease;
+}
+button:hover{
+    background: #2c2323;
 }
 .words{
     background: #fff;
