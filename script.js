@@ -1,8 +1,7 @@
-const speakBtn = document.querySelector('button');
+const speakBtn = document.querySelector('button'),
+btn = document.querySelector('button h3'),
+talk = document.querySelector('h2');
 
-// speakBtn.onclick = function speak(){
-//    console.log('Hello');
-// };
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
@@ -10,6 +9,8 @@ const recognition = new SpeechRecognition();
 
 recognition.onstart = function () {
    console.log('speech recognition started');
+   btn.textContent = "Listening...";
+
 };
 
 
@@ -18,6 +19,7 @@ recognition.onresult = function (event) {
    const spokenwords = event.results[0][0].transcript;
 
    console.log('Spoken Words are',spokenwords);
+   talk.textContent = spokenwords
    computerSpeech(spokenwords);
 }
 
@@ -35,23 +37,23 @@ function computerSpeech(words) {
 }
 
 function determineWords(speech, words) {
-   if(words.includes("hello")) {
-      speech.text = "Heyyyyyyy";
+   if(words.includes("Hello")) {
+      speech.text = "Heyy";
+      btn.textContent = "Speak";
    }
 
-   if(words.includes("what is your name")) {
-      speech.text = "My name is ABK";
+   if(words.includes("What is your name")) {
+      speech.text = "My name is Giwa Favour";
+      btn.textContent = "Speak";
    }
-   if(words.includes("how are you doing")) {
+   if(words.includes("How are you doing")) {
       speech.text = "I am fine , thank you";
+      btn.textContent = "Speak";
    }
-   if(words.includes("who are you")) {
+   if(words.includes("Who are you")) {
       speech.text = "I am habeebee , ABK new girlfriend!";
+      btn.textContent = "Speak";
    }
-     if(words.includes("what do you have to say to Abdul")) {
-      speech.text = "Fuck you , Gaddau!";
-   }
-
 }
 
 // function greetMe(){
@@ -59,21 +61,21 @@ function determineWords(speech, words) {
 //    let hr = date.getHours();
 
 //    if(hr >= 0 && hr < 12){
-//       speech.text("Good Morning Babe");
+//       computerSpeech("Good Morning Babe");
 //    }else if(hr >= 12 && hr <= 16){
-//       speech.text("Good Afternoon Babe");
+//       computerSpeech("Good Afternoon Babe");
 //    }else if(hr > 16 && hr < 12){
-//       speech.text("Good Evening Babe");
+//       computerSpeech("Good Evening Babe");
 //    }
 // }
 
 speakBtn.addEventListener('click', () => {
    recognition.start();
-//    greetMe();
+   talk.textContent = '....'
 }) 
 
 // window.addEventListener('load', ()=> {
-// //    speech.text("Activating Sepab");
+//    computerSpeech("Activating Sepab");
 //    greetMe();
 // })
 // window.addEventListener('load', greetMe);
