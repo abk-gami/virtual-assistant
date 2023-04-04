@@ -28,3 +28,10 @@ button{
     border: none;
     box-shadow: 1px 1px 36px #9c9c9c;
 }
+.words{
+    background: #fff;
+    color: #000;
+    margin-top: 30px;
+    padding: 20px 18px;
+    border-radius: 30px;
+}
