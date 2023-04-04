@@ -22,7 +22,7 @@ function greetMe() {
         speak("Good Afternoon babe");
     }
     else {
-        speak("Good Evening Abubakar");
+        speak("Good Evening babe");
     }
 }
 
@@ -59,10 +59,15 @@ function speakThis(message) {
         const finalText = "I am fine , thank you babe";
         speech.text = finalText;
     }
-    else if(message.includes('Who are you ')) {
-        const finalText = "I am f";
+    else if(message.includes('who are you')) {
+        const finalText = "I am Habeebee, ABK new girlfriend";
         speech.text = finalText;
     }
+    else if(message.includes('abdul jalal')) {
+        const finalText = "Fuck you gadau";
+        speech.text = finalText;
+    }
+    
 
 
 
