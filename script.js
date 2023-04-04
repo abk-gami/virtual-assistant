@@ -19,7 +19,8 @@ recognition.onresult = function (event) {
    const spokenwords = event.results[0][0].transcript;
 
    console.log('Spoken Words are',spokenwords);
-   talk.textContent = spokenwords
+   talk.textContent = spokenwords;
+   btn.textContent = "Speak";
    computerSpeech(spokenwords);
 }
 
